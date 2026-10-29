@@ -1,8 +1,9 @@
 {
+  "id": "./",
   "name": "Timer Plus PWA - インターバルタイマー",
   "short_name": "TimerPlus",
   "description": "筋トレ・ストレッチ向け高視認性AMOLEDインターバルタイマー",
-  "start_url": "./index.html",
+  "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait-primary",
@@ -11,10 +12,16 @@
   "lang": "ja",
   "icons": [
     {
-      "src": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect width='512' height='512' fill='%23000000' rx='112'/><circle cx='256' cy='276' r='168' fill='none' stroke='%23222222' stroke-width='28'/><circle cx='256' cy='276' r='168' fill='none' stroke='%23FF3D00' stroke-width='28' stroke-dasharray='790 1055' stroke-linecap='round' transform='rotate(-90 256 276)'/><rect x='216' y='52' width='80' height='24' rx='12' fill='%23FFD600'/><path d='M256 188V276L320 316' fill='none' stroke='%23FFFFFF' stroke-width='28' stroke-linecap='round' stroke-linejoin='round'/></svg>",
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon.svg",
       "sizes": "192x192 512x512",
       "type": "image/svg+xml",
-      "purpose": "any maskable"
+      "purpose": "maskable"
     }
   ]
 }
