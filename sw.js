@@ -1,11 +1,11 @@
-const CACHE_NAME = 'training-timer-pwa-v5';
+const CACHE_NAME = 'training-timer-pwa-v6';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
   './style.css',
   './app.js',
   './manifest.json',
-  './icon.svg'
+  './icon.png'
 ];
 
 self.addEventListener('install', (event) => {

@@ -9,7 +9,7 @@
   // --- Storage Keys ---
   const STORAGE_KEYS = {
     PRESETS: 'training_timer_presets_v1',
-    ACTIVE_ID: 'training_timer_active_id_v1',
+    ACTIVE_ID: 'training_timer_last_preset_id',
     CONFIG: 'training_timer_config_v1'
   };
 
@@ -254,7 +254,6 @@
 
     if (presets.length === 0) {
       presets = deepClone(DEFAULT_PRESETS);
-      savePresets();
     }
 
     const savedActive = localStorage.getItem(STORAGE_KEYS.ACTIVE_ID);
@@ -263,6 +262,7 @@
     } else {
       activePresetId = presets[0].id;
     }
+    savePresets();
   }
 
   function normalizePreset(raw) {
@@ -761,6 +761,7 @@
       if (p.id === activePresetId) opt.selected = true;
       el.presetSelect.appendChild(opt);
     });
+    el.presetSelect.value = activePresetId;
   }
 
   function updateTimerUI() {
