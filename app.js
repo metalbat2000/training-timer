@@ -8,9 +8,9 @@
 
   // --- Storage Keys ---
   const STORAGE_KEYS = {
-    PRESETS: 'timer_plus_presets_v2',
-    ACTIVE_ID: 'timer_plus_active_id_v2',
-    CONFIG: 'timer_plus_config_v1'
+    PRESETS: 'training_timer_presets_v1',
+    ACTIVE_ID: 'training_timer_active_id_v1',
+    CONFIG: 'training_timer_config_v1'
   };
 
   // --- Default Presets ---
