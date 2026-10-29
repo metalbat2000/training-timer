@@ -1,5 +1,5 @@
 /**
- * Timer Plus PWA - Interval Timer Application
+ * Training Timer PWA - Interval Timer Application
  * Pure Vanilla JS (ES6+) / Offline First / AMOLED Power Saving
  */
 
@@ -1647,7 +1647,7 @@
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = `timer-plus-presets-${new Date().toISOString().slice(0, 10)}.json`;
+      a.download = `training-timer-presets-${new Date().toISOString().slice(0, 10)}.json`;
       a.click();
       URL.revokeObjectURL(url);
       showToast('JSONファイルを書き出しました');

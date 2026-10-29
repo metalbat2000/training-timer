@@ -1,7 +1,7 @@
 {
   "id": "./",
-  "name": "Timer Plus PWA - インターバルタイマー",
-  "short_name": "TimerPlus",
+  "name": "Training Timer",
+  "short_name": "Training Timer",
   "description": "筋トレ・ストレッチ向け高視認性AMOLEDインターバルタイマー",
   "start_url": "./",
   "scope": "./",
